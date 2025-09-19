@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.example.relay</groupId>
 	<artifactId>relay</artifactId>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>relay</name>
 	<description>relay</description>
@@ -57,6 +58,11 @@
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
 			<artifactId>thymeleaf-layout-dialect</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-tomcat</artifactId>
+		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
 
