@@ -16,6 +16,4 @@ public class RelayApplication extends SpringBootServletInitializer {
 	  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
 	      return application.sources(RelayApplication.class);
 	  }
-	}
-
 }
