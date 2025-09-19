@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout}">
+    <head>
+        <title>relay</title>
+    </head>
+    <body>
+        <div class="pages-index-wrapper text-center" layout:fragment="contents">
+            <div class="container">
+                <div class="row p-form-top d-none d-lg-block d-xl-block d-xxl-block"></div>
+				<h1 class="text-white" th:text="#{pages.index.lead.1}">さくら病棟 持ち物依頼</h1>
+				<h2 class="text-white" th:text="#{pages.index.lead.2}">ご家族様・面会者様へ持ち物を依頼する画面です</h2>
+                <div class="d-none d-lg-block d-xl-block d-xxl-block">
+                    <div class="row justify-content-center">
+						<section id="news" class="wrapper">
+									<h2 class="sec-title">以下、次回ご来院時にお持ちください</h2>
+									<dl>
+										<dt>2025.XX.XX</dt>
+										<dd>○○様　入院書類</dd>
+										<dt>2025.XX.XX</dt>
+										<dd>○○様　お菓子</dd>
+									</dl>
+						</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

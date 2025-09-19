@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/layout}">
+
+<head>
+	<meta charset="UTF-8">
+	<title>さくら病院さくら病棟</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-title">
+				<h1 class="logo">さくら病院さくら病棟</h1>
+				<p class="title-text">すべての患者様に豊かな暮らしを提供します。</p>
+			</div>
+		</div>
+	</header>
+	<div id="mainvisual">
+		        <picture>
+		          <source media="(max-width: 600px)" srcset="img/mainvisual.png">
+		          <img src="../../static/images/mainvisual.png" th:src="images/mainvisual.png" />
+		        </picture>
+	</div>
+	<div layout:fragment="contents">
+	<header>
+		<nav>
+			<ul class="header-navigation clearfix">
+				<li><a href="#about">このページについて</a></li>
+				<li><a href="#picture">病棟内の写真</a></li>
+				<li><a href="#jobs">＜入院中の方のご家族様へ＞面会予約・持ち物</a></li>
+				<li><a href="#news">地域の方へのご案内</a></li>
+				<li><a href="#contact">お問い合わせ</a></li>
+				</li>
+			</ul class="header-navigation clearfix">
+		</nav>
+	</header>
+	<main>
+		<section id="about" class="wrapper">
+			<h2 class="sec-title">このページについて</h2>
+			<ul>
+				<li>こちらは、さくら病棟へ入院ご検討中、あるいは入院中の患者様やご家族様に向けて</li>
+				<li>病棟のご紹介やイベントのご案内ができるページです。</li>
+			</ul>
+			<p>病棟内の写真：クリックすると詳細が見られます</p>
+			<p>面会予約・持ち物：ログインすると面会の予約ができ、持ち物の依頼状況がみられます</p>
+			<p>地域の方へのご案内：セミナーやイベントの申し込みができます</p>
+			<p>問い合わせ：何かお困りごとがあればお問い合わせください</p>
+		</section>
+		<section id="picture" class="wrapper">
+			<h2 class="sec-title">病棟内の写真</h2>
+			<ul>
+				<li><img src="../../static/images/picture1.png" th:src="images/picture1.png" alt="開放的なナースステーション"></li>
+				<li><img src="../../static/images/picture2.png" th:src="images/picture2.png" alt="広々とした個室"></li>
+				<li><img src="../../static/images/picture3.png" th:src="images/picture3.png" alt="総室もあります"></li>
+				<li><img src="../../static/images/picture4.png" th:src="images/picture4.png" alt="OT室にて創作活動ができます"></li>
+				<li><img src="../../static/images/picture5.png" th:src="images/picture5.png" alt="脱衣所と浴室です"></li>
+				<li><img src="../../static/images/picture6.png" th:src="images/picture6.png" alt="洗濯室もあります"></li>
+			</ul>
+		</section>
+		<section id="jobs" class="wrapper">
+			<h2 class="sec-title">面会予約・持ち物</h2>
+			<dl>
+				<dt>入院中の患者様のご家族様へ</dt>
+				<dd>【ログインページ】</dd>
+			</dl>
+		</section>
+
+		<section id="news" class="wrapper">
+			<h2 class="sec-title">地域の方へのご案内</h2>
+			<dl>
+				<dt>2025.XX.XX</dt>
+				<dd>○○認定看護師によるセミナー開催「○○○」</dd>
+				<dt>2025.XX.XX</dt>
+				<dd>○○認定看護師によるセミナー開催「○○○」</dd>
+				<dt>2024.XX.XX</dt>
+				<dd>【夏祭りのお知らせ】今年も夏祭りを開催します。</dd>
+				<dt>2024.XX.XX</dt>
+				<dd>学会誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+			</dl>
+		</section>
+	</main>
+	<footer id="footer">
+		<p>&copy; 2025 relay さくら病院さくら病棟</p>
+	</footer>
+</body>
+</html>
